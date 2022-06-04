@@ -4,33 +4,30 @@
  * main - Entry points
  * Return: 0
  */
-int main(void)
+int main (void)
 {
-	int c;
-	int d = 0;
+	int tens;
+	int ones;
 
-	while (d < 0)
+	for (tens = 0; tens <= 9; tens ++)
 	{
-		c = 0;
-		while (c < 10)
+		for (ones = tens + 1; tens <= 9; ones++)
 		{
-			if (d != c && d < c)
+			putchar(tens + '0');
+			putchar(ones + '0');
+			if (tens < 8)
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
-
-			c++;
-
 		}
-		d++;
 	}
 	putchar('\n');
+
 	return (0);
 }
+
+	
+	
+	
+	
