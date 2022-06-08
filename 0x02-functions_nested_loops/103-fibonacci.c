@@ -18,5 +18,5 @@ int main(void)
 			sum += next;
 	}
 	printf("%i\n", sum);
-	retuen (0);
+	return (0);
 }
