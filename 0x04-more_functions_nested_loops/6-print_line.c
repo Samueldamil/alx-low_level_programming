@@ -4,8 +4,10 @@
  * print_lines - print straight line
  * Return: void
  */
+
 void print_line(int n)
 {
+	
 	int i = 0;
 
 	while (i < n && n > 0)
@@ -14,4 +16,5 @@ void print_line(int n)
 		i++;
 	}
 	_putchar('\n');
+
 }
