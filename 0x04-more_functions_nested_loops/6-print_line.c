@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_lines - print straight line
  * Return: void
