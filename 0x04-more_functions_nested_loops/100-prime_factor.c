@@ -5,22 +5,19 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
+	long int x = 612852475143;
+	long int py;
 
-unsigned int long n = 612852475143, a = (int) sqrt(n);
-
-while (1)
-{
-
-	if (n % a == 0)
+	for (py = 2; py < x; py++)
 	{
-		printf("%lu \n", n / a);
-		break;
+		if (x % py == 0)
+		{
+			x = x / py;
+		}
 	}
-	a--;
-
-}
-
-return (0);
+	printf("%ld\n", py);
+	return (0);
 }
