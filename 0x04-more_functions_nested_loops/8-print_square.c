@@ -4,7 +4,7 @@
  * @n : number of _ ro be printed
  * Return: void
  */
-void print_square(void)
+void print_square(int n)
 {
 	int i = 0, ii;
 	
