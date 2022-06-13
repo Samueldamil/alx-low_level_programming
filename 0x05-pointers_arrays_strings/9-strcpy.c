@@ -1,4 +1,5 @@
 #include "main.h"
+
 /** 
  * *_strcpy - copies the string pointed by src
  * @dest : char type string
@@ -8,7 +9,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i = -1;
-	
+
 	do {
 		i++;
 		dest[i] = src[i];
