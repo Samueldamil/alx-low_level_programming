@@ -5,6 +5,7 @@
  * @src: pointer source
  * Return pointer to dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int d = 0;
