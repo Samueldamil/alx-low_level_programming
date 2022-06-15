@@ -10,9 +10,9 @@ char *_strcat(char *dest, char *src)
 	int d = 0;
 	int s = 0;
 
-	for (dest[d] != '\0'; d++)
+	for (d = 0; dest[d] != '\0'; d++)
 	;
-	for (src[s] != '\0'; s++)
+	for (s = 0; src[s] != '\0'; s++)
 	{
 		d++;
 		dest[d] = src[s];
