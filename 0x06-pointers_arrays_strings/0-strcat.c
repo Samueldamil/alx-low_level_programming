@@ -6,15 +6,11 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int a = -1, i;
+	int d, s;
 
-	for (i = 0; dest[i] != '\0'; i++)
-	
-	do{
-		a++;
-		dest[i] = src[a];
-		i++;
-	}while (src[a] != '\0');
-
+	for (d = 0; dest[d] != '\0'; d++)
+	;
+	for (s = 0; src[s] != '\0'; s++; d++)
+		dest[d] = src[s];
 	return (dest);
 }
