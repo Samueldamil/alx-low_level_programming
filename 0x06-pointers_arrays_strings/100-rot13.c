@@ -4,23 +4,25 @@
  * @str: string
  *Return: string
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-int i, ii;
-char input[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i;
 
-for (i = 0; str[i] != '\0'; i++)
-{
-	for (ii = 0; ii < 54; ii++)
+	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *ptr = str;
+
+	while (*s)
 	{
-		if (((str[i] <= 'z' && str[i] >= 'a') || (str[i] <= 'Z' && str[i] >= 'A'))
-		&& s[i] == input[ii])
+		for (i = 0; i <= 52; i++)
 		{
-			str[i] = output[ii];
-			break;
+			if (*s == rot13[i])
+			{
+				*s = ROT13[i];
+				break;
+			}
 		}
+		s++;
 	}
-}
-return (s);
+	return (ptr);
 }
