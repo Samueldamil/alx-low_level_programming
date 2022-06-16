@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strncpy - two words
  * @dest: pointer definition
@@ -6,6 +7,7 @@
  * @n: number of bytes
  * Return: dest
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
 	int a;
