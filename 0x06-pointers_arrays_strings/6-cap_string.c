@@ -1,4 +1,4 @@
-#include "main.h"
+
 /**
  * *cap_string - capitalise all the strings
  * @s : pointer to the strings
