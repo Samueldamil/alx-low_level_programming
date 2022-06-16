@@ -2,7 +2,7 @@
 /**
  * *rot13 - encoding strings
  * @str: string
- *Return: string
+ * Return: string
  */
 char *rot13(char *s)
 {
