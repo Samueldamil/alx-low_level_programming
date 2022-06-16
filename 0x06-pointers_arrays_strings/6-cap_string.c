@@ -1,24 +1,36 @@
-
+#include "main.h"
 /**
- * *cap_string - capitalise all the strings
- * @s : pointer to the strings
- * Return: string
+ * cap_string - capitalizes all words of a string.
+ * @s: string.
+ * Return: string.
  */
 char *cap_string(char *s)
 {
-	int j, k;
-	char symb[] = " \t\n,;.!?\"(){}"
+	int i;
 
-	for (j = 0; s[j] != '\0'; j++)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		if (s[j] >= 97 && s[j] <= 122)
-			s[j] = s[j] - 32;
-			for (k = 0; symb[k] != '\0'; k++)
-				if (s[j] == symb[k] && s[j + 1] >= 97 && s[j + 1] <= 122)
-					s[j + 1] = s[j + 1] - 32;
-	
+		if ((s[i - 1] == ' ' || s[i - 1] == '\n'
+		|| s[i - 1] == '\t' || s[i - 1] == ','
+		|| s[i - 1] == ';' || s[i - 1] == '!'
+		|| s[i - 1] == '?' || s[i - 1] == '"'
+		|| s[i - 1] == '(' || s[i - 1] == ')'
+		|| s[i - 1] == '{' || s[i - 1] == '}'
+		|| s[i - 1] == '.')
+		&& (s[i] >= 'a' && s[i] <= 'z'))
+		{
+			s[i] = s[i] - 32;
+		}
+		else if ((s[0] >= 97 && s[0] <= 122))
+		{
+			s[0] = s[0] - 32;
+		}
+		else
+		{
+			s[i] = s[i];
+		}
+		i++;
 	}
 	return (s);
-}
-		
 		
