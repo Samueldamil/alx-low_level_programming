@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * *rot13 - encoding strings
- * @str: string
+ * @s: string
  * Return: string
  */
 char *rot13(char *s)
