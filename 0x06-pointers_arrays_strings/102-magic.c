@@ -19,5 +19,5 @@ int main(void)
 	p[5] = 98;
 		/*This code will print 98\n*/
 	printf("a[2]: %d\n" a[2]);
-	retuen (0);
+	return (0);
 }
