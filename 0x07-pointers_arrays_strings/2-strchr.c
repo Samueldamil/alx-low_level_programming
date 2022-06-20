@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * *_strchr - locate the character in a string
  * @s : pointer to the constant
  * @c : constant
  * Return : s
  */
+
 char *_strchr(char *s, char c)
 {
 	int i;
