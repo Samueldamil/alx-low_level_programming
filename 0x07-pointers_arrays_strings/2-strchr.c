@@ -3,6 +3,7 @@
  * @s : pointer to the constant
  * @c : constant
  * Return : s
+ */
 char *_strchr(char *s, char c);
 {
 	int i;
