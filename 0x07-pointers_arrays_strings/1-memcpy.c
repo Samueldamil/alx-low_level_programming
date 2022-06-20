@@ -1,3 +1,9 @@
+/**
+ * _memcpy - copy memory area from source to destination
+ * @src : source file
+ * @dest : destination file
+ * Return : destination
+ */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int index;
