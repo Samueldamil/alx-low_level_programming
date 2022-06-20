@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * *_strchr - locate the character in a string
  * @s : pointer to the constant
