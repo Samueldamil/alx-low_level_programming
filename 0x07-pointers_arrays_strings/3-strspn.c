@@ -18,10 +18,10 @@ unsigned int _strspn(char *s, char *accept)
 				sub++;
 				break;
 			}
-			if (accept[j] = '\0')
-			{
-				break;
-			}
+		}
+		if (accept[j] == '\0')
+		{
+			break;
 		}
 	}
 	return (sub);
