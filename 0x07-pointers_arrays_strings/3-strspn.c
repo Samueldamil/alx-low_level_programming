@@ -1,10 +1,13 @@
 #include "main.h"
+
 /**
  * _strspn - length of a prefix substring
  * @s : string to check
  * @accept : character to match
  * Return : int
  */
+
+
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, sub = 0;
