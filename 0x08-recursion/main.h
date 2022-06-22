@@ -9,6 +9,4 @@ int _sqrt(int n, int i);
 int is_prime_number(int n);
 int check_prime(int n, int resp);
 int is_palindrome(char *s);
-int last_index(char *s)
-int check(char *s, int start, int end, int pair)
 int wildcmp(char *s1, char *s2);
