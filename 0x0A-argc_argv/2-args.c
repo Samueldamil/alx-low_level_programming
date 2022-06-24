@@ -4,7 +4,7 @@
  * @argc: number of arguments
  * @argc: array to the pointer of a string
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int i;
 
