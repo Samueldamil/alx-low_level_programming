@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#ifndef MAIN_H
-=======
 #if !defined(MAIN_H)
->>>>>>> 1367885 (create array)
 #define MAIN_H
 
 #include <stdlib.h>
