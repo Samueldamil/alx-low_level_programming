@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 #ifndef MAIN_H
+=======
+#if !defined(MAIN_H)
+>>>>>>> 1367885 (create array)
 #define MAIN_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 char *create_array(unsigned int size, char c);
 char *_strdup(char *str);
@@ -10,4 +15,4 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
-#endif /* MAIN_H */
+#endif
