@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 #include <stdlib.h>
 /**
  * *get_op_func - function that select the correct functio
