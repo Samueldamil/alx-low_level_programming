@@ -23,11 +23,4 @@ int main(int argc, char *argv[])
 	printf("%d\n", R);
 
 	return (0);
-}		exit(98);
-	}
-
-	R = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", R);
-
-	return (0);
 }
