@@ -8,32 +8,28 @@
 *
 * Return: Always 0.
 */
-int main(int argc, char *argv[])
+int main(int arc, char *argv[])
 {
-	int num1, num2;
-	char *op;
+	int num1, num2, (*operate)(int, int);
 
-	if (argc != 4)
+	if (arc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		exit (98);
 	}
-
-	num1 = atoi(argv[1]);
-	op = argv[2];
-	num2 = atoi(argv[3]);
-
-	if (get_op_func(op) == NULL || op[1] != '\0')
+	if ((*arg[2] != '+' && *arg[2] != '-' && *arg[2] != '*' && *arg[2] != '/' && *arg[2] != '%') || *arg[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(99);
+		exit (99);
 	}
-	if ((*op == '/' && num2 == 0) ||
-	    (*op == '%' && num2 == 0))
+	num1 = atoi(arg[1]);
+	num2 = atoi(arg[3]);
+	if ((*arg[2] ==  '/' || *arg[2] == '%') && (num2 == 0))
 	{
 		printf("Error\n");
-		exit(100);
+		exit (100);
 	}
-	printf("%d\n", get_op_func(op)(num1, num2));
+	operate =  get_op_func(arg[2]);
+	printf("%d\n", operate(num1, num2));
 	return (0);
 }
