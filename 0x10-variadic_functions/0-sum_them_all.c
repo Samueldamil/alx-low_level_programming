@@ -2,11 +2,13 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - sum of all its parameters
- * @n: integer
+ * sum_them_all -  sum all arguments
+ * @n: int, number of undefined arguments
  *
- * Return: sum of all its parameters
+ * Return: sum of args
+ * On error, 0 is returned
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list plus;
