@@ -9,10 +9,10 @@ void print_all(const char * const format, ...);
 int _putchar(char c);
 
 
-void print_int(va_list list);
-void print_float(va_list list);
-void print_char(va_list list);
-void print_str(va_list list);
+void print_int(va_list s);
+void print_float(va_list s);
+void print_char(va_list s);
+void print_str(va_list s);
 
 /**
  * struct printTypeStruct - structure definition of a printTypeStruct
