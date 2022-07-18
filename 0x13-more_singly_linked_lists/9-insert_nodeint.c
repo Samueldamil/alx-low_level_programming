@@ -5,6 +5,7 @@
  * tion
  * @head: first node address
  * @idx: Data of new node
+ * @n: integer
  * Return: Address of new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
